@@ -1,17 +1,94 @@
-head {
+html, body {
     padding: 0;
+    margin-top: 0;
     margin: 0;
 }
 
-#husepus {
-    width: 10rem;
-    height: 20rem;
+nav {
     background-color: bisque;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
     display: flex;
     justify-content: center;
+    z-index: 2;
+}
+
+a {
+    margin-right: 1rem;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    border-radius: 0.8rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.477);
+}
+
+.nodhjelp {
+    position: relative;
+}
+
+.nodhjelpnr {
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    min-width: 80px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.nr {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 8px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.nr:hover {
+    transform: scale(1.1);
+}
+
+.nodhjelp:hover .nodhjelpnr {
+    display: flex;
+}
+
+
+
+#husepuser {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.husepus {
+    width: 10rem;
+    height: 15rem;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+header {
+    margin: 1rem;
 }
 
 img {
-    width: 5rem;
-    height: 12rem;
+    width: 7rem;
+    border-radius: 1rem;
 }

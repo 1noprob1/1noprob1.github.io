@@ -1,0 +1,70 @@
+head {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:rgb(48, 46, 43) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#brett {
+    width: 700px;
+    height: 700px;
+    display: grid;
+    gap: 2px;
+    background-color: rgb(118, 150, 86);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8,1fr);
+    margin: 10px;
+}
+
+#brett > div {
+    grid-column: 10px;
+    grid-row: 10px;
+}
+
+#brett div:nth-child(16n+1),
+#brett div:nth-child(16n+3),
+#brett div:nth-child(16n+5),
+#brett div:nth-child(16n+7),
+#brett div:nth-child(16n+10),
+#brett div:nth-child(16n+12),
+#brett div:nth-child(16n+14),
+#brett div:nth-child(16n+16) {
+    background-color: rgb(238, 238, 210);
+}
+
+.topp-venstre       { grid-area: q; }
+.bunn-venstre       { grid-area: w; }
+.topp-midt-venstre  { grid-area: e; }
+.topp-midt-midt     { grid-area: r; }
+.midt-midt-midt     { grid-area: t; }
+.topp-høyre         { grid-area: h; }
+.høyre-midt-midt    { grid-area: u; }
+.høyre-bunn         { grid-area: i; }
+.høyre              { grid-area: o; }
+
+#hoved {
+    width: 700px;
+    height: 500px;
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+    background-color: rgb(38, 37, 34);
+    border-radius: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "q e r h h"
+    "q t t u o"
+    "w t t i o";
+}
+
+#hoved > div {
+    background-color: rgb(118, 150, 86);
+    padding: 5px;
+    border-radius: 5px;
+}

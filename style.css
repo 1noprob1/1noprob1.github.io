@@ -2,6 +2,10 @@ body, html {
     padding: 0;
     margin: 0;
     height: 100%;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -9,6 +13,8 @@ nav {
     padding: 10px;
     list-style: none;
     display: grid;
+    position: fixed;
+    width: 99%;
     grid-template-columns: repeat(2,1fr);
 }
 
@@ -24,22 +30,144 @@ nav {
 }
 #hjem a {
     padding: 5px;
-    background-color: black;
+    color: white;
+    font-weight:100;
+    font-size:medium;
+    text-decoration: none;
+    background-color: rgba(224, 92, 92, 0.685);
 }
 
 li a {
     margin: 10px;
     padding: 5px;
-    background-color: black;
+    color: white;
+    font-weight:100;
+    font-size:medium;
+    text-decoration: none;
+    background-color: rgba(224, 92, 92, 0.685);
+}
+
+#divider {
+    background-color: rgb(186, 186, 186);
+    height: 3px;
+    width: 100%;
+    margin-top: 49px;
+    position: fixed;
+}
+
+@media only screen and (max-width: 556px) {
+    nav {
+        background-color: rgb(255, 127, 127);
+        padding: 10px;
+        list-style: none;
+        display: grid;
+        position: fixed;
+        width: 99%;
+        grid-template-columns:repeat(2,1fr)
+    }
+
+    #hjem {
+        display: flex;
+        justify-content: left;
+    }
+
+    #meny {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    #hjem a {
+        padding: 5px;
+        color: white;
+        font-weight:100;
+        font-size:medium;
+        text-decoration: none;
+        background-color: rgba(224, 92, 92, 0.685);
+    }
+
+    li a {
+        margin: 5px;
+        padding: 5px;
+        color: white;
+        font-weight:100;
+        font-size:medium;
+        text-decoration: none;
+        background-color: rgba(224, 92, 92, 0.685);
+    }
+
+    #divider {
+        background-color: rgb(186, 186, 186);
+        height: 4px;
+        width: 100%;
+        margin-top: 49px;
+        position: fixed;
+    }
 }
 
 #start {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 50px;
-    max-width: 1500px;
-    justify-items: center;
-    align-items: center;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+@media only screen and (max-width: 820px) {
+    #portrett {
+        padding: 50px;
+        grid-area: p;
+        margin-top: -10rem;
+    }
+    #portrett img {
+        width:fit-content;
+        max-width: fit-content;
+    }
+    #meg {
+        max-width: 500px;
+        margin-right: 1rem;
+        margin-top: -10rem;
+        text-wrap: wrap;
+        grid-area: m;
+    }
+    #start {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: "m"
+                             "p";
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #portrett {
+        padding: 50px;
+        grid-area: p;
+        margin-top: -10rem;
+    }
+    #portrett img {
+        width: 100%;
+    }
+    #meg {
+        max-width: 500px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: -10rem;
+        text-wrap: wrap;
+        grid-area: m;
+    }
+    #start {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: "m"
+                             "p";
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 #portrett {
@@ -47,11 +175,14 @@ li a {
 }
 
 #portrett img {
-    width: 500px;
+    max-width: 500px;
 }
 
+
 #meg {
-    width: 500px;
+    max-width: 500px;
+    margin-right: 1rem;
+    text-wrap: wrap;
 }
 
 #meg header {
@@ -59,28 +190,43 @@ li a {
     font-size: x-large;
 }
 
-#meg header a {
-    
+#meg a {
+    font-size: large;
 }
 
 #pil {
     display: flex;
     justify-self: center;
     transition: transform 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
 }
 
 #pil :hover {
     transform:scale(1.1);
 }
 
+@media only screen and (max-width: 820px) {
+    #pil {
+        display: none;
+        justify-self: center;
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #pil :hover {
+        transform:scale(1.1);
+    }
+}
+
 #prosjekter {
     margin: 50px;
-    height: 200px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    justify-items: center;
-    column-gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 
 #prosjekter div {
     margin: 10px;
@@ -89,6 +235,16 @@ li a {
     align-items: center;
     background-color: rgb(255, 127, 127);
     min-width: 200px;
-    border: 3px solid black;
+    min-height: 200px;
     border-radius: 5px;
+}
+
+#prosjekter div header {
+    color: white;
+    font-weight:300;
+    font-size:medium;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(224, 92, 92, 0.685);
 }

@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#tittel {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#undertittel {
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+#info {
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+#divider {
+    background-color: rgba(51, 51, 51, 0.5);
+    height: 1px;
+    width: 100%;
+}
+
+#overskrift {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+#underoverskrift {
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    margin: 20px;
+}
+
+#tegneseriesamling {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 3px;
+}
+.tegneserie {
+    width: 14%;
+}
+
+.tegneserie img {
+    border-radius: 10px;
+    width:95%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .tegneserie {
+        width: 30%;
+    }
+}

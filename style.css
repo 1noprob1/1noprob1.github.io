@@ -10,7 +10,7 @@ body, html {
 
 nav {
     background-color: rgb(255, 127, 127);
-    padding: 10px;
+    padding-left: 15px;
     list-style: none;
     display: grid;
     position: fixed;
@@ -29,15 +29,6 @@ nav {
     justify-content: right;
 }
 #hjem a {
-    padding: 5px;
-    color: white;
-    font-weight:100;
-    font-size:medium;
-    text-decoration: none;
-    background-color: rgba(224, 92, 92, 0.685);
-}
-
-li a {
     margin: 10px;
     padding: 5px;
     color: white;
@@ -45,6 +36,26 @@ li a {
     font-size:medium;
     text-decoration: none;
     background-color: rgba(224, 92, 92, 0.685);
+    transition: transform 0.3s ease-in-out;
+}
+
+#hjem a:hover {
+    transform: scale(1.1);
+}
+
+#meny a {
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    font-weight:100;
+    font-size:medium;
+    text-decoration: none;
+    background-color: rgba(224, 92, 92, 0.685);
+    transition: transform 0.3s ease-in-out;
+}
+
+#meny a:hover {
+    transform: scale(1.1);
 }
 
 #divider {
@@ -85,7 +96,7 @@ li a {
         background-color: rgba(224, 92, 92, 0.685);
     }
 
-    li a {
+    #meny a {
         margin: 5px;
         padding: 5px;
         color: white;
@@ -197,13 +208,12 @@ li a {
 #pil {
     display: flex;
     justify-self: center;
-    transition: transform 0.3s ease-in-out;
     position: absolute;
     bottom: 0;
 }
-
-#pil :hover {
-    transform:scale(1.1);
+#pil:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 820px) {
@@ -220,11 +230,20 @@ li a {
     }
 }
 
+#overskrift {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    font-size: x-large;;
+}
+
 #prosjekter {
     margin: 50px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
 
 

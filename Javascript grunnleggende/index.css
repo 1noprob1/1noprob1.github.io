@@ -1,0 +1,75 @@
+body {
+    background-color:darkviolet;
+    padding: 0;
+    margin: 0;
+    filter: blur();
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: lavender;
+    font-family: fantasy;
+    font-size: 56px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); } }
+
+header:hover {
+    animation: spin; 
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#knapp {
+    color: black;
+    background-color: wheat;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    
+}
+
+img {
+    border-radius: 20px;
+    margin: 20px;
+    width: 400px;
+}
+
+#bilder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bildeetter {
+    filter: opacity(50%);
+}
+
+#bildefør {
+    filter: opacity(50%);
+}

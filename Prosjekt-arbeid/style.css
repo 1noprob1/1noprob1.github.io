@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4d09b;
+}
+
+#hoved {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#store {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #cdab79;
+}
+
+#store h1 {
+    align-self: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: xx-large;
+}
+
+header p {
+    font-size: medium;
+}
+
+#hjul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#hjulbildet {
+    width: 350px;
+    transition: transform 0.1s ease;
+    animation: spin  linear infinite;
+}
+
+#hjul img:active {
+    transform: scale(1.1);
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); } }
+
+#hjulet {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  appearance: none;
+}
+
+#hjul p {
+    font-size: medium;
+}
+
+#stat {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #cdab79;
+}
+
+#stat h1 {
+    align-self: center;
+}

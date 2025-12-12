@@ -4,15 +4,13 @@ let turbo = 0;
 let akselerasjon = 0.9;
 let radius = 0.5;
 
-let stein = "Bilder/steinHjul.png"
-let tre = "Bilder/treHjul.png"
-let metall = "Bilder/metallHjul.png"
-let moderne = "Bilder/moderneHjul.png"
-let race = "Bilder/raceHjul.png"
+let grønnKule = "Bilder/grønnKule.png"
+let rødKule = "Bilder/rødKule.png"
+let gullKule = "Bilder/gullKule.png"
 
 let level = 0
-let levler = [stein,tre,metall,moderne,race];
-let levelFart = 20;
+let levler = [grønnKule, rødKule, gullKule];
+let levelFart = 120;
 
 function nytthjul() {
     if (fart >= levelFart) {

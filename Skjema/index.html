@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<form id="skjema">
+    <div id="blur"></div>
+    <label for="name">Navn:</label>
+    <input type="text" id="name" name="name" placeholder="Skriv inn navnet ditt" required>
+
+    <label for="age">Alder:</label>
+    <input type="number" id="age" name="age" placeholder="Skriv inn alderen din" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Skriv inn epost adressen din" required>
+
+    <label for="fødselsdato">Fødselsdato:</label>
+    <input type="date" id="date" name="date" placeholder="Skriv in fødselsdatoen din" required>
+
+    <label for="time">Når sto du opp?</label>
+    <input type="time" id="time" name="time" placeholder="Når sto du opp i dag?" required>
+
+    <label for="password">Passord:</label>
+    <input type="password" id="password" name="password" placeholder="Lag et passord" required>
+
+    <div id="time">
+        <label for="checkbox">Jeg fikk dårlig tid til skolen:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" placeholder="Jeg fikk dårlig tid">
+    </div>
+
+    <label>Kjønn:</label>
+    <div id="kjonn">
+        <label for="mann">Mann</label>
+        <input type="radio" id="mann" name="kjonn" value="mann" required>
+        <label for="kvinne">Kvinne</label>
+        <input type="radio" id="kvinne" name="kjonn" value="kvinne">
+    </div>
+
+    <button type="submit">Send inn</button>
+</form>
+</body>
+</html>

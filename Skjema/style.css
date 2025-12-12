@@ -1,0 +1,70 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* background: linear-gradient(45deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%); */
+    background: url(https://img.freepik.com/free-vector/orange-irregular-organic-lines-seamless-pattern_1409-4190.jpg?semt=ais_hybrid&w=740&q=80)
+}
+
+#blur {
+    position: absolute;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+#skjema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 50px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+
+#skjema label {
+    text-align: center;
+    font-size: large;
+    margin: 5px;
+ }
+
+#skjema input{
+    text-align: center;
+    width: 75%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 30px;
+}
+
+#time {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#time input {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+
+#kjonn {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#kjonn input {
+    margin: 0;
+    padding: 0;
+
+}

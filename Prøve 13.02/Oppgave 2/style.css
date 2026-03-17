@@ -1,0 +1,38 @@
+body {
+    background-color: #EAEFEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+header {
+    color: #25343F;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#bøker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.bok {
+    background-color: #25343F;
+    color: #EAEFEF;
+    border-radius: 15px;
+    border: solid 5px #BFC9D1;
+    width: 400px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

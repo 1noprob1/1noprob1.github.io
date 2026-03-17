@@ -1,0 +1,28 @@
+body {
+    background-color: #243545;
+    color: white;
+}
+
+header {
+    font-size: xx-large;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-top: 30px;
+    justify-self: center;
+    align-items: center;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 5px;
+}
+
+form button {
+    margin: 5px;
+}
